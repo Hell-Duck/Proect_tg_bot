@@ -1,22 +1,21 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="tictactoe_bot",  # Название пакета
-    version="0.1",  # Версия
+    name="Practic_X_O",
+    version="0.1",
     description="Telegram-бот для игры в крестики-нолики",
     long_description=open("README.md", encoding="utf-8").read(),
     long_description_content_type="text/markdown",
-    author="pashabezk",  # Ваше имя или ник
-    author_email="your-email@example.com",  # Опционально
-    url="https://github.com/your-username/tictactoe-bot",  # Ссылка на репозиторий
-    packages=find_packages(),  # Автоматически находит все пакеты
+    author="Yudin, Kulish",
+    url="https://github.com/Hell-Duck/Proect_tg_bot",
+    packages=find_packages(),
     install_requires=[
-        "python-telegram-bot>=20.0",  # Зависимости
+        "python-telegram-bot>=20.0",
     ],
-    python_requires=">=3.7",  # Минимальная версия Python
+    python_requires=">=3.7",
     entry_points={
         "console_scripts": [
-            "tictactoe-bot=main:main",  # Команда для запуска из терминала
+            "tg_bot=main:main",
         ],
     },
 )
